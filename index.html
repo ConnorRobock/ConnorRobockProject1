@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creative</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
@@ -15,59 +15,59 @@
 </head>
 <body>
     <!-- Skip Link -->
-    <a href="#mainContent" class="skip-link">Skip to Main Content</a>
+    <a class="skipLink" href="#mainContent">Skip to Main Content</a>
 
     <!-- Sticky Nav -->
     <nav class="navBar">
         <div class="wrapper">
-            <nav>
-                <!-- Top left menu on sticky nav -->
-                <ul class="topLeftMenu">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="./blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                </ul>
-                <!-- Logo -->
-                <a href="#home" class="logo">
-                    <h1>Creative</h1>
-                </a>
-                <!-- top right menu on sticky nav -->
-                <div class="searchCart">
-                    <a href="#">Shop</a>
-                    <a href="./contact.html">Contact</a>
-                        <button>
-                            <i class="fa-solid fa-magnifying-glass" aria-hidden="true">
-                                <span class="sr-only">Search Button</span>
-                            </i>
-                        </button>
-                        <button>
-                            <i class="fa-solid fa-bag-shopping" aria-hidden="true">
-                                <span class="sr-only">
-                                    Shopping bag
-                                </span>
-                            </i>
+            <!-- Top left menu on sticky nav -->
+            <ul class="topLeftMenu">
+                <li>
+                    <a class="home" href="#">Home</a>
+                </li>
+                <li>
+                    <a href="./blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+            </ul>
+            <!-- Logo -->
+            <a href="#home" class="logo">
+                <h1>Creative</h1>
+            </a>
+            <!-- top right menu on sticky nav -->
+            <div class="searchCart">
+                <a href="#">Shop</a>
+                <a href="./contact.html">Contact</a>
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true">
+                            <span class="sr-only">Search Button</span>
+                        </i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-bag-shopping shoppingBag" aria-hidden="true">
+                            <span class="sr-only">
+                                Shopping bag
+                            </span>
                             <div class="counter">
-                                <p>0</p>
+                                <p class="smallText">2</p>
                             </div>
-                        </button>
-                </div>
-            </nav>
+                        </i>
+                            
+                    </button>
+            </div>
         </div>
     </nav>
 
-<!-- Header, empty with only background image -->
-
-    <header>    
-        <div class="headerBackground"></div>
+    <!-- header will only hold background header img -->
+    <header>
+        <div></div>
     </header>
 
-    <section class="brandingSection">
+<!-- Branding Section -->
+
+    <section class="brandingSection" id="mainContent">
         <div class="wrapper">
             <div class="imgContainer">
                 <img src="./assets/home-circle-text.png" alt="Branding and Website Pros">

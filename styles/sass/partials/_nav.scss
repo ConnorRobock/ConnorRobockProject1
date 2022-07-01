@@ -1,12 +1,57 @@
-.skip-link {
+// Skip Link
+.skipLink {
     position: absolute;
     left: -1000px;
     top: 5px;
-    background-color: $solidWhite;
-    color: black;
+    background-color: $secondary;
+    color: $footerTextColor;
     z-index: 10;
-
     &:focus {
         left: 0;
     }
 }
+
+.navBar {
+    position: sticky;
+    top: 0;
+    padding: 20px 0;
+    background-color: $secondary;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul, .searchCart {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    a, button {
+        padding: 15px;
+    }
+
+    .shoppingBag {
+        position: relative;
+    }
+
+    .shoppingBag .counter {
+        background-color: $lightSage;
+        display: inline-block;
+        position: absolute;
+        bottom: -10px;
+        right: -5px;
+        border-radius: 50%;
+    }
+
+    .smallText {
+        padding: 4px;
+    }
+
+}
+
+
+
+
