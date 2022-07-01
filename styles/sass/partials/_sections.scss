@@ -1,0 +1,40 @@
+// Branding Section
+
+.brandingSection {
+    background-color: $lightSage;
+    padding: 180px 0 100px 0;
+
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgContainer {
+        position: relative;
+    }
+
+    .absoluteImg {
+        position: absolute;
+        top: -95px;
+        left: -110px;
+    }
+
+    .flexContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .textContainer {
+        width: calc( 35% - 50px );
+        text-align: center;
+        padding: 75px 25px 0 25px;
+    }
+        p {
+            padding-top: 15px;
+        }
+
+    
+    
+}

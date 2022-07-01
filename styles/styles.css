@@ -269,7 +269,9 @@ h4 {
 ul,
 li,
 a,
-input, p {
+input,
+p,
+img {
   margin: 0;
   padding: 0;
 }
@@ -281,6 +283,13 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+ul,
+a,
+p {
+  font-size: 0.7rem;
+  letter-spacing: 0.3px;
 }
 
 .navBar {
@@ -307,6 +316,16 @@ h1 {
   font-size: 1.85rem;
 }
 
+h2 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+}
+
+.brandingSection p {
+  line-height: 24px;
+}
+
 .skipLink {
   position: absolute;
   left: -1000px;
@@ -320,10 +339,9 @@ h1 {
 }
 
 .navBar {
-  position: sticky;
   top: 0;
-  padding: 20px 0;
-  background-color: #f6f6f6;
+  padding: 15px 0;
+  z-index: 10;
 }
 .navBar .wrapper {
   display: -webkit-box;
@@ -362,9 +380,50 @@ h1 {
   padding: 4px;
 }
 
-header div {
+header {
   background-image: url(../assets/home-1.jpeg);
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+
+.brandingSection {
+  background-color: #c3dab7;
+  padding: 180px 0 100px 0;
+}
+.brandingSection .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.brandingSection .imgContainer {
+  position: relative;
+}
+.brandingSection .absoluteImg {
+  position: absolute;
+  top: -95px;
+  left: -110px;
+}
+.brandingSection .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.brandingSection .textContainer {
+  width: calc(35% - 50px);
+  text-align: center;
+  padding: 75px 25px 0 25px;
+}
+.brandingSection p {
+  padding-top: 15px;
 }
