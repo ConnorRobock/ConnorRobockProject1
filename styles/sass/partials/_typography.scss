@@ -21,7 +21,7 @@ h4 {
     text-transform: uppercase;
     padding: 0;
     margin: 0;
-
+    
 }
 
 ul,
@@ -50,6 +50,10 @@ p {
     letter-spacing: 0.3px;
 }
 
+i {
+    font-size: 1rem;
+}
+
 // navBar fonts
 .navBar {
     color: $primary;
@@ -65,10 +69,6 @@ p {
 
     .home {
         text-decoration: line-through;
-    }
-
-    i {
-        font-size: 1rem;
     }
 
     .smallText {
@@ -88,8 +88,56 @@ h2 {
     letter-spacing: 1.8px;
 }
 
-// branding Section
-.brandingSection p {
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 0.8rem;
+    letter-spacing: 0.3px;
+}
+
+// Section styles
+section p {
     line-height: 24px;
+    color: $bodyFontColor;
+}
+
+.brandingSection {
+    p {
+        color: $primary;
+    }
+}
+
+.portfolio {
+    p {
+        font-style: italic;
+    }
+
+    a {
+        font-weight: bold;
+        font-size: 1.85rem;
+    }
+    
+}
+
+.aboutUs {
+    i {
+        font-size: 1.5rem;
+    }
+}
+
+.teamImgGallery {
+    .secondTextContainer {
+        p {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.lineSection a {
+    text-transform: uppercase;
+    font-weight: bold;
 }
 

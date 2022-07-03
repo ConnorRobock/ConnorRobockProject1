@@ -1,10 +1,16 @@
+// General Section Styles
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+}
+
 // Branding Section
 
 .brandingSection {
     background-color: $lightSage;
     padding: 180px 0 100px 0;
-
-
+    
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -21,11 +27,6 @@
         left: -110px;
     }
 
-    .flexContainer {
-        display: flex;
-        justify-content: center;
-    }
-
     .textContainer {
         width: calc( 35% - 50px );
         text-align: center;
@@ -33,8 +34,174 @@
     }
         p {
             padding-top: 15px;
+        } 
+}
+
+// Portfolio Section
+
+.portfolio {
+    background-color: $footerTextColor;
+    padding: 125px 0 100px 0;
+
+    img {
+        border-radius: 50%;
+    }
+
+    .flexContainer {
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
         }
 
-    
-    
+        p {
+            padding-top: 40px;
+        }
+    }
 }
+
+// About Us Section
+
+.aboutUs {
+    background-image: url(../assets/home-4.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    .wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    i {
+        color: $primary;
+        border: 1px solid $primary;
+        border-radius: 50%;
+        height: 50%;
+        padding: 15px;
+    }
+
+    P {
+        padding-top: 15px;
+    }
+
+    .aboutUsList {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: space-between;
+        margin: 180px 0 100px 0;
+    }
+
+    .textContainer {
+        padding-left: 20px;
+    }
+    
+    li {
+        display: flex;
+        width: calc( 50% - 20px);
+        // max-width: 50%;
+        padding-bottom: 30px;
+        padding-left: 20px;
+    }
+     
+}
+
+// Team Gallery Section
+
+.teamGallery {
+    background-color: $footerTextColor;
+
+    h3 {
+        text-align: center;
+        margin: 150px 0 100px 0;
+    }
+
+    h4 {
+        letter-spacing: 3px;
+    }
+
+    .textContainer, .secondTextContainer, img {
+        margin: 15px;
+    }
+
+    .teamImgGallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 150px 0;
+
+        .textContainer {
+            width: calc( 50% - 30px);
+            background-color: $secondary;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 45px;
+
+            p {
+                padding-top: 30px;
+            }
+        }
+
+        img {
+            width: calc( 25% - 30px);
+        }
+
+        .secondTextContainer {
+            width: 25%;
+            background-color: $footerTextColor;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: calc(25% - 30px);
+            
+            p {
+                padding: 75px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// Line Section
+
+.lineSection {
+    background-color: $lightSage;
+    background-image: url(../assets/home-10.jpeg);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    flex-wrap: wrap;
+
+    .wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .flexContainer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 200px 0 200px 0;
+        
+
+        p {
+            padding: 100px 100px 75px 100px;
+        }
+
+        a {
+            background-color: $footerTextColor;
+            padding: 15px 20px;
+        }
+
+    }
+}
+
