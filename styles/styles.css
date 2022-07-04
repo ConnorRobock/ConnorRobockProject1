@@ -242,6 +242,10 @@ img {
   border: none;
 }
 
+.blogWrapper {
+  width: 80%;
+}
+
 html {
   font-size: 125%;
 }
@@ -257,7 +261,9 @@ nav {
 h1,
 h2,
 h3,
-h4 {
+h4,
+.blogH2,
+.blogH3 {
   font-family: "Montserrat";
   font-weight: normal;
   color: #333333;
@@ -330,6 +336,11 @@ h3 {
 h4 {
   font-size: 0.8rem;
   letter-spacing: 0.3px;
+}
+
+.blogH2 {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 section p {
@@ -439,6 +450,10 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
+}
+
+.blogHeader {
+  background-image: url(../assets/blog-1.jpeg);
 }
 
 .flexContainer {
@@ -661,6 +676,75 @@ header {
 .lineSection .flexContainer a {
   background-color: #ffffff;
   padding: 15px 20px;
+}
+
+.blogPost,
+.blogRelatedPosts,
+.blogComments,
+.postComment {
+  background-color: #ffffff;
+  margin-top: 100px;
+}
+
+.blogH2 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.blogPost .smallerTitle {
+  color: #333333;
+}
+.blogPost span {
+  color: #737373;
+}
+.blogPost .blogProfile, .blogPost .blogProfilePic, .blogPost .blogProfileDate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.blogPost .blogProfilePic, .blogPost .blogProfileDate {
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blogPost .blogProfile {
+  margin-top: 75px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #737373;
+}
+.blogPost .blogProfilePic img {
+  border-radius: 50%;
+}
+.blogPost .blogProfilePic .textContainer {
+  margin-left: 40px;
+}
+.blogPost .blogProfileDate {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogPost article {
+  margin-top: 50px;
+}
+.blogPost article p {
+  padding-bottom: 30px;
+}
+.blogPost article .blogIntro {
+  color: #333333;
+  font-weight: bold;
+}
+.blogPost .share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.blogPost .share a {
+  padding-left: 20px;
 }
 
 footer {

@@ -14,7 +14,9 @@ nav {
 h1,
 h2,
 h3,
-h4 {
+h4,
+.blogH2,
+.blogH3 {
     font-family: $headerFont;
     font-weight: normal;
     color: $primary;
@@ -97,6 +99,12 @@ h4 {
     letter-spacing: 0.3px;
 }
 
+// blog header font sizes
+.blogH2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
 // Section styles
 section p {
     line-height: 24px;
@@ -140,6 +148,10 @@ section p {
     text-transform: uppercase;
     font-weight: bold;
 }
+
+// blog font styles
+
+
 
 // Footer font styles
 footer {

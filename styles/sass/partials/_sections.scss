@@ -205,3 +205,83 @@
     }
 }
 
+// blog sections
+
+.blogPost,
+.blogRelatedPosts,
+.blogComments,
+.postComment {
+    background-color: $footerTextColor;
+    margin-top: 100px;
+}
+
+// blog post section
+
+.blogH2 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.blogPost {
+
+    .smallerTitle {
+        color: $primary;
+    }
+
+    span {
+        color: $bodyFontColor;
+    }
+
+    .blogProfile, .blogProfilePic, .blogProfileDate {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .blogProfilePic, .blogProfileDate {
+        width: 50%;
+        align-items: center;
+    }
+
+    .blogProfile {
+        margin-top: 75px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid $bodyFontColor;
+    }
+
+    .blogProfilePic {
+        img {
+            border-radius: 50%;
+        }
+        .textContainer {
+            margin-left: 40px;
+        }
+    }
+
+    .blogProfileDate {
+        justify-content: space-between;
+    }
+
+    // blog post styles
+
+    article {
+        margin-top: 50px;
+
+        p {
+            padding-bottom: 30px;
+        }
+        .blogIntro {
+            color: $primary;
+            font-weight: bold;
+        }
+    }
+
+    .share {
+        display: flex;
+        align-content: center;
+        
+        a {
+            padding-left: 20px;
+        }
+
+    }
+}
