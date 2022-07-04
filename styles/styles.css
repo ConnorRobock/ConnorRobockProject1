@@ -363,6 +363,22 @@ section p {
   font-weight: bold;
 }
 
+footer {
+  color: #f6f6f6;
+}
+footer h2 {
+  color: #f6f6f6;
+}
+footer p {
+  line-height: 24px;
+}
+footer ul {
+  list-style: disc;
+}
+footer li {
+  line-height: 30px;
+}
+
 .skipLink {
   position: absolute;
   left: -1000px;
@@ -645,4 +661,72 @@ header {
 .lineSection .flexContainer a {
   background-color: #ffffff;
   padding: 15px 20px;
+}
+
+footer {
+  background-color: #333333;
+}
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+footer h2 {
+  padding: 150px 0 50px 0;
+}
+
+.contactNav .footerSocial {
+  padding-top: 40px;
+}
+.contactNav .footerSocial a {
+  padding-right: 15px;
+}
+
+.blogPosts h2 {
+  text-align: center;
+}
+
+.twitterForm h2 {
+  text-align: right;
+}
+.twitterForm form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  font-family: "Open Sans";
+  font-size: 0.7rem;
+  padding-top: 40px;
+}
+.twitterForm form input {
+  padding: 10px;
+  padding-right: 50px;
+  border-radius: 0;
+  border: none;
+}
+.twitterForm form button {
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: #c3dab7;
+}
+.twitterForm form button p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.footerLogo {
+  border-top: 1px solid #424242;
+  margin-top: 200px;
+}
+.footerLogo p {
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 75px 0;
 }

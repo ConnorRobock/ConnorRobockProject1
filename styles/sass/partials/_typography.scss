@@ -141,3 +141,24 @@ section p {
     font-weight: bold;
 }
 
+// Footer font styles
+footer {
+    color: $secondary;
+
+    h2 {
+        color: $secondary;
+    }
+
+    p {
+        line-height: 24px;
+    }
+
+    ul {
+        list-style: disc;
+    }
+    
+    li {
+        line-height: 30px;
+    }
+}
+
