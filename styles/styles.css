@@ -441,9 +441,11 @@ footer li {
 }
 
 .navBar {
+  position: sticky;
   top: 0;
   padding: 15px 0;
   z-index: 10;
+  background-color: #efefef;
 }
 .navBar .wrapper {
   display: -webkit-box;

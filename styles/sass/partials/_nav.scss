@@ -12,11 +12,11 @@
 }
 
 .navBar {
-    // position: sticky;
+    position: sticky;
     top: 0;
     padding: 15px 0;
     z-index: 10;
-    // background-color: $secondary;
+    background-color: $navBarColor;
 
     .wrapper {
         display: flex;
@@ -52,7 +52,4 @@
     }
 
 }
-
-
-
 
