@@ -143,9 +143,7 @@
 
     <section class="blogRelatedPosts">
         <div class="wrapper blogWrapper">
-            <h3 class="blogH3">
-                Related Posts
-            </h3>
+            <h3 class="blogH3">Related Posts</h3>
             <div class="postsGallery">
                 <a href="#">
                     <div class="blogImgContainer">
@@ -174,25 +172,26 @@
     <section class="blogComments">
         <div class="wrapper blogWrapper">
             <div class="commentHeader">
-                <p class="blogCounter">02</p>
-                <h3 class="blogh3">Comments</h3>
+                <h3 class="blogH3"><span class="commentCounter">02</span> Comments</h3>
             </div>
-            <div class="comment">
-                <img src="./assets/blog-6.jpeg">
-                <div class="textContainer">
-                    <p>Daniel Vandaft - <span>Reply</span></p>
-                    <p>Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding.
-                    </p>
-                    <p>Jul 17, 2015 at 15 hours ago</p>
+            <div class="commentSection">
+                <div class="comment">
+                    <img src="./assets/blog-6.jpeg">
+                    <div class="textContainer">
+                        <p class="name">Daniel Vandaft - <span>Reply</span></p>
+                        <p>Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding.
+                        </p>
+                        <p class="date">Jul 17, 2015 at 15 hours ago</p>
+                    </div>
                 </div>
-            </div>
-            <div class="comment">
-                <img src="./assets/blog-7.jpeg">
-                <div class="textContainer">
-                    <p>JENIFER LOOPZ - <span>Reply</span></p>
-                    <p>Reply Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy.
-                    </p>
-                    <p>Jul 17, 2015 at 15 hours ago</p>
+                <div class="comment">
+                    <img src="./assets/blog-7.jpeg">
+                    <div class="textContainer">
+                        <p class="name">JENIFER LOOPZ - <span>Reply</span></p>
+                        <p>Reply Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy.
+                        </p>
+                        <p class="date">Jul 17, 2015 at 15 hours ago</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -201,19 +200,23 @@
     
     <section class="postComment">
         <div class="wrapper blogWrapper">
-            <h3 class="blogh3">leave a comment</h3>
+            <h3 class="blogH3">leave a comment</h3>
             <form action="">
-                <label for="name" class="sr-only">name</label>
-                <input type="text" id="name" placeholder="Enter your name...">
 
-                <label for="email" class="sr-only">email</label>
-                <input type="email" id="email" placeholder="youremail@domain.com">
+                <fieldset>
+                    <label for="name" class="sr-only">name</label>
+                    <input type="text" id="name" placeholder="Enter your name...">
 
-                <label for="subject" class="sr-only">Name</label>
-                <input type="text" id="subject" placeholder="Subject (Optional)">
+                    <label for="email" class="sr-only">email</label>
+                    <input class="email" type="email" id="email" placeholder="youremail@domain.com">
 
-                <label for="comment" class="sr-only">Message for me</label>
-                <textarea id="comment" cols="30" rows="10" placeholder="Here goes your comment"></textarea>
+                    <label for="subject" class="sr-only">Name</label>
+                    <input type="text" id="subject" placeholder="Subject (Optional)">
+                </fieldset>
+
+                    <label for="comment" class="sr-only">Message for me</label>
+                    <textarea id="comment" cols="30" rows="10" placeholder="Here goes your comment"></textarea>
+                
 
                 <button type="submit" class="blogButton">submit comment</button>
 

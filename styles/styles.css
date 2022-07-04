@@ -343,6 +343,11 @@ h4 {
   font-weight: bold;
 }
 
+.blogH3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
 section p {
   line-height: 24px;
   color: #737373;
@@ -372,6 +377,39 @@ section p {
 .lineSection a {
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.commentCounter {
+  color: #333333;
+  font-family: "Montserrat";
+}
+
+.blogComments .name {
+  color: #333333;
+  text-transform: uppercase;
+}
+.blogComments .comment span {
+  color: #737373;
+  font-style: italic;
+  text-transform: none;
+}
+.blogComments .date {
+  color: #b9b9b9;
+}
+
+.postComment input, .postComment textarea {
+  font-family: "Open Sans";
+  color: #737373;
+  font-size: 0.7rem;
+  padding-bottom: 10px;
+}
+.postComment .email {
+  color: #333333;
+}
+.postComment button {
+  font-family: "Open Sans";
+  color: #333333;
+  text-transform: uppercase;
 }
 
 footer {
@@ -548,7 +586,6 @@ header {
   color: #333333;
   border: 1px solid #333333;
   border-radius: 50%;
-  height: 50%;
   padding: 15px;
 }
 .aboutUs P {
@@ -573,7 +610,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(50% - 20px);
+  width: calc(50% - 35px);
   padding-bottom: 30px;
   padding-left: 20px;
 }
@@ -686,8 +723,13 @@ header {
   margin-top: 100px;
 }
 
+.blogProfile, .blogH3 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #737373;
+}
+
 .blogH2 {
-  text-align: center;
+  text-align: left;
   padding-bottom: 40px;
 }
 
@@ -712,8 +754,6 @@ header {
 }
 .blogPost .blogProfile {
   margin-top: 75px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #737373;
 }
 .blogPost .blogProfilePic img {
   border-radius: 50%;
@@ -745,6 +785,87 @@ header {
 }
 .blogPost .share a {
   padding-left: 20px;
+}
+
+.blogRelatedPosts .postsGallery {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogRelatedPosts a {
+  width: 31%;
+}
+.blogRelatedPosts img {
+  width: 100%;
+}
+.blogRelatedPosts p {
+  padding-top: 30px;
+  color: #333333;
+}
+
+.commentSection {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.commentSection .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 30px;
+}
+.commentSection .comment p {
+  padding-bottom: 15px;
+}
+.commentSection img {
+  height: 50%;
+}
+.commentSection .textContainer {
+  background-color: #f6f6f6;
+  width: 100%;
+  margin-left: 40px;
+  padding: 20px 25px 20px 25px;
+}
+
+.postComment {
+  margin-bottom: 200px;
+}
+.postComment input, .postComment textarea {
+  border: none;
+  width: 31%;
+  border-bottom: #737373 1px solid;
+}
+.postComment input {
+  margin-top: 50px;
+}
+.postComment textarea {
+  width: 100%;
+  margin: 40px 0 60px 0;
+}
+.postComment fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.postComment button {
+  border: none;
+  border-bottom: 1px solid #333333;
+  background-color: #ffffff;
 }
 
 footer {

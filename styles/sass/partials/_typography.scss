@@ -105,6 +105,11 @@ h4 {
     font-weight: bold;
 }
 
+.blogH3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
 // Section styles
 section p {
     line-height: 24px;
@@ -125,8 +130,7 @@ section p {
     a {
         font-weight: bold;
         font-size: 1.85rem;
-    }
-    
+    }  
 }
 
 .aboutUs {
@@ -149,8 +153,51 @@ section p {
     font-weight: bold;
 }
 
-// blog font styles
+// blog comment section font styles
 
+.commentCounter {
+    color: $primary;
+    font-family: $headerFont;
+}
+
+.blogComments {
+    .name {
+        color: $primary;
+        text-transform: uppercase;
+    }
+
+    .comment span {
+        color: $bodyFontColor;
+        font-style: italic;
+        text-transform: none;
+    }
+
+    .date {
+        color: $commentDateColor;
+    }
+}
+
+// postComment Fonts 
+
+.postComment {
+
+    input, textarea{
+        font-family: $bodyFont;
+        color: $bodyFontColor;
+        font-size: 0.7rem;
+        padding-bottom: 10px;
+    }
+
+    .email {
+        color: $primary;
+    }
+
+    button {
+        font-family: $bodyFont;
+        color: $primary;
+        text-transform: uppercase;
+    }
+}
 
 
 // Footer font styles
