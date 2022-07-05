@@ -378,6 +378,50 @@
     }
 }
 
+// contact page sections
+
+.contactH3 {
+    padding-bottom: 30px;
+}
+
+.contactDetails {
+    margin-top: 150px;
+
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactInfo {
+        margin: 50px;
+        display: flex;
+        flex-wrap: wrap;
+
+        div {
+            width: calc( (100%/3) - 20px);
+            padding: 75px 40px 75px 40px;
+        }
+    }
+
+    .address {
+        border-left: 1px solid $secondary;
+        border-right: 1px solid $secondary;
+    }
+
+    i {
+        font-size: 2rem;
+    }
+
+    h4 {
+        letter-spacing: 7px;
+    }
+    
+}
+
+.contactComment {
+    margin-bottom: 125px;
+}
+
 
 
 

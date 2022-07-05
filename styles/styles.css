@@ -246,6 +246,10 @@ img {
   width: 80%;
 }
 
+.contactWrapper {
+  width: 70%;
+}
+
 html {
   font-size: 125%;
 }
@@ -348,6 +352,19 @@ h4 {
   font-weight: bold;
 }
 
+.contactH2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.contactH3, .contactDetails H4 {
+  font-weight: bold;
+}
+
+address, email {
+  font-size: 0.7rem;
+}
+
 section p {
   line-height: 24px;
   color: #737373;
@@ -428,6 +445,13 @@ footer li {
   line-height: 30px;
 }
 
+.contactComment .contactFieldset {
+  margin-top: 75px;
+}
+.contactComment button {
+  font-weight: bold;
+}
+
 .skipLink {
   position: absolute;
   left: -1000px;
@@ -494,6 +518,26 @@ header {
 
 .blogHeader {
   background-image: url(../assets/blog-1.jpeg);
+}
+
+.contactHeader {
+  background-image: url(../assets/contact-1.jpeg);
+  background-size: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-position: top;
+}
+.contactHeader .contactH2 {
+  width: 25%;
 }
 
 .flexContainer {
@@ -868,6 +912,49 @@ header {
   border: none;
   border-bottom: 1px solid #333333;
   background-color: #ffffff;
+}
+
+.contactH3 {
+  padding-bottom: 30px;
+}
+
+.contactDetails {
+  margin-top: 150px;
+}
+.contactDetails .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contactDetails .contactInfo {
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contactDetails .contactInfo div {
+  width: calc(33.3333333333% - 20px);
+  padding: 75px 40px 75px 40px;
+}
+.contactDetails .address {
+  border-left: 1px solid #f6f6f6;
+  border-right: 1px solid #f6f6f6;
+}
+.contactDetails i {
+  font-size: 2rem;
+}
+.contactDetails h4 {
+  letter-spacing: 7px;
+}
+
+.contactComment {
+  margin-bottom: 125px;
 }
 
 footer {

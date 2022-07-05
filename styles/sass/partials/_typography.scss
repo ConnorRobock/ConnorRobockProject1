@@ -110,6 +110,21 @@ h4 {
     font-weight: bold;
 }
 
+// contact header font size
+
+.contactH2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.contactH3, .contactDetails H4 {
+    font-weight: bold;
+}
+
+address, email {
+    font-size: 0.7rem;
+}
+
 // Section styles
 section p {
     line-height: 24px;
@@ -219,5 +234,19 @@ footer {
     li {
         line-height: 30px;
     }
+}
+
+// blog button text
+
+.contactComment {
+
+    .contactFieldset {
+        margin-top: 75px;
+    }
+
+    button {
+    font-weight: bold;
+    }
+
 }
 
