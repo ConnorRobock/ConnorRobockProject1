@@ -22,16 +22,15 @@
             <div class="wrapper">
 
                 <!-- Top left menu on sticky nav -->
-
                 <ul class="topLeftMenu">
                     <li>
-                        <a class="home" href="./index.html">Home</a>
+                        <a class="home remove" href="./index.html">Home</a>
                     </li>
                     <li>
-                        <a href="./blog.html">Blog</a>
+                        <a class="remove" href="./blog.html">Blog</a>
                     </li>
                     <li>
-                        <a href="#">Portfolio</a>
+                        <a class="remove" href="#">Portfolio</a>
                     </li>
                 </ul>
                 <!-- Logo -->
@@ -40,8 +39,8 @@
 
                 <!-- top right menu on sticky nav -->
                 <div class="searchCart">
-                    <a href="#">Shop</a>
-                    <a href="./contact.html">Contact</a>
+                    <a class="remove" href="#">Shop</a>
+                    <a class="remove" href="./contact.html">Contact</a>
                         <a href="#">
                             <i class="fa-solid fa-magnifying-glass" aria-hidden="true">
                                 <span class="sr-only">Search Button</span>
@@ -58,10 +57,41 @@
                             </i>
                                 
                         </a>
+                        <!-- slide out nav button-->
+                        <input type="checkbox" id="openSideMenu">
+                        <label for="openSideMenu" class="menuButton">
+                            <div>
+                                <i class="fa-solid fa-bars">
+                                    <span class="sr-only">menu button</span>
+                                </i>
+                            </div>
+                        
+                        </label>
+
+                        <!-- slide out menu -->
+                        <div class="slideOutNav">
+                            <ul class="topLeftMenu">
+                                <li>
+                                    <a class="home" href="./index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="./blog.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shop</a>
+                                </li>
+                                <li>
+                                    <a href="./contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
                 </div>
             </div>
         </nav>
-    <header>
+    <header class="mainHeader">
         <div></div>
     </header>
     <!-- header for background image -->
@@ -175,13 +205,25 @@
                     <h4>team players</h4>
                     <p>Pitch client interaction design owndership disruptive leverage prototype conversion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interace.</p>
                 </div>
-                <img src="./assets/home-5.jpeg" alt="team member #1">
-                <img src="./assets/home-6.jpeg" alt="team member #2">
-                <img src="./assets/home-7.jpeg" alt="team member #3">
-                <img src="./assets/home-8.jpeg" alt="team member #4">
-                <img src="./assets/home-9.jpeg" alt="team member #5">
+                <a href="#">
+                    <img src="./assets/home-5.jpeg" alt="team member #1">
+                </a>
+                <a href="#">
+                    <img src="./assets/home-6.jpeg" alt="team member #2">
+                </a>
+                <a href="#">
+                    <img src="./assets/home-7.jpeg" alt="team member #3">
+                </a>
+                <a href="#">
+                    <img src="./assets/home-8.jpeg" alt="team member #4">
+                </a>
+                <a href="#">
+                    <img src="./assets/home-9.jpeg" alt="team member #5">
+                </a>
                 <div class="secondTextContainer">
-                    <p>want to work with us!</p>
+                    <a href="#">
+                        want to work with us!
+                    </a>
                 </div>
             </div>
         </div>

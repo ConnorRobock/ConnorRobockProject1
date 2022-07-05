@@ -24,3 +24,16 @@ img {
     width: 70%;
 }
 
+button {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+// button hover styles
+.blogButton {
+    &:hover, &:focus {
+        color: $footerTextColor;
+        background-color: $primary;
+        padding: 5px;
+    }
+}

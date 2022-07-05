@@ -1,0 +1,141 @@
+//breakpoints at 1150px/850px/350px
+// latop media queries
+
+@media (max-width: 1150px) {
+// Main Page
+    .mainHeader {
+        height: 70vh;
+    }
+
+    .aboutUs .aboutUsList {
+        width: 70%;
+    }
+
+    .footerLogo {
+        margin-top: 100px;
+
+    }
+
+    .teamGallery {
+        h3 {
+            margin: 100px;
+        }
+        .teamImgGallery {
+            margin-bottom: 75px;
+            a {
+                width: calc(50% - 30px);
+            }
+
+            .secondTextContainer {
+                width: calc(100% - 30px);
+                    a {
+                        font-size: 1.25rem;
+                        padding: 50px;
+                    }
+            }
+        }
+    }
+
+    footer {
+        .wrapper {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        
+            h2 {
+                padding-top: 75px;
+            }
+            .twitterForm {
+                h2 {
+                    text-align: center;
+                }
+                form {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 850px) {
+// Main Page
+    .mainHeader {
+            height: 50vh;
+        }
+    
+    .aboutUs .aboutUsList {
+        width: 70%;
+    }
+
+    .navBar {
+
+        .wrapper {
+            justify-content: center;
+        }
+
+        input,
+        label,
+        label div {
+            display: block;
+        }
+
+        label div {
+            padding-left: 20px;
+        }
+
+        .remove {
+            display: none;
+        }
+    }
+
+    .aboutUs .aboutUsList {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brandingSection {
+        
+        .absoluteImg {
+            display: none;
+        }
+
+        .flexContainer {
+            flex-direction: column;
+            align-items: center;
+
+            .textContainer {
+                width: 80%;
+            }
+        }
+    }
+
+    .teamGallery {
+
+        .teamImgGallery {
+            margin-bottom: 75px;
+
+            a, .textContainer {
+                width: calc(100% - 30px);
+            }
+
+        }
+    }
+
+}
+
+@media (max-width: 450px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .lineSection {
+    background-image: none;
+    }
+        .flexContainer {
+            width: 100%;
+        }
+    
+}

@@ -250,6 +250,18 @@ img {
   width: 70%;
 }
 
+button {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.blogButton:hover, .blogButton:focus {
+  color: #ffffff;
+  background-color: #333333;
+  padding: 5px;
+}
+
 html {
   font-size: 125%;
 }
@@ -452,6 +464,14 @@ footer li {
   font-weight: bold;
 }
 
+.secondTextContainer a {
+  font-size: 0.7rem;
+  line-height: 24px;
+  font-family: "Open Sans";
+  color: #737373;
+  text-transform: uppercase;
+}
+
 .skipLink {
   position: absolute;
   left: -1000px;
@@ -481,6 +501,8 @@ footer li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .navBar ul, .navBar .searchCart {
   display: -webkit-box;
@@ -506,6 +528,52 @@ footer li {
 }
 .navBar .smallText {
   padding: 4px;
+}
+
+.navBar input, .navBar label, .navBar label div {
+  display: none;
+}
+.navBar label div {
+  z-index: 20;
+  cursor: pointer;
+}
+.navBar i {
+  cursor: pointer;
+}
+
+.slideOutNav {
+  background-color: #333333;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 100%;
+  height: 100vh;
+  max-width: 200px;
+  color: #ffffff;
+  padding: 35px 50px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+.slideOutNav ul {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.slideOutNav ul li {
+  padding: 10px;
+}
+
+.navBar input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+}
+.navBar input[type=checkbox]:checked ~ .slideOutNav {
+  left: 0;
 }
 
 header {
@@ -657,6 +725,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: calc(50% - 35px);
+  min-width: 50%;
   padding-bottom: 30px;
   padding-left: 20px;
 }
@@ -671,7 +740,7 @@ header {
 .teamGallery h4 {
   letter-spacing: 3px;
 }
-.teamGallery .textContainer, .teamGallery .secondTextContainer, .teamGallery img {
+.teamGallery .textContainer, .teamGallery .secondTextContainer {
   margin: 15px;
 }
 .teamGallery .teamImgGallery {
@@ -700,11 +769,21 @@ header {
 .teamGallery .teamImgGallery .textContainer p {
   padding-top: 30px;
 }
-.teamGallery .teamImgGallery img {
+.teamGallery .teamImgGallery a {
   width: calc(25% - 30px);
+  margin: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 0.7rem;
+}
+.teamGallery .teamImgGallery a:hover, .teamGallery .teamImgGallery a:focus {
+  padding: 10px;
+  opacity: 80%;
+}
+.teamGallery .teamImgGallery img {
+  width: 100%;
 }
 .teamGallery .teamImgGallery .secondTextContainer {
-  width: 25%;
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -719,7 +798,9 @@ header {
           align-items: center;
   width: calc(25% - 30px);
 }
-.teamGallery .teamImgGallery .secondTextContainer p {
+.teamGallery .teamImgGallery .secondTextContainer a {
+  margin: 0;
+  width: 100%;
   padding: 75px;
   text-align: center;
 }
@@ -957,6 +1038,14 @@ header {
   margin-bottom: 125px;
 }
 
+.bottomImg div {
+  background-image: url(../assets/contact-2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 100vh;
+}
+
 footer {
   background-color: #333333;
 }
@@ -1023,4 +1112,133 @@ footer h2 {
   text-align: center;
   text-transform: uppercase;
   padding: 75px 0;
+}
+
+@media (max-width: 1150px) {
+  .mainHeader {
+    height: 70vh;
+  }
+
+  .aboutUs .aboutUsList {
+    width: 70%;
+  }
+
+  .footerLogo {
+    margin-top: 100px;
+  }
+
+  .teamGallery h3 {
+    margin: 100px;
+  }
+  .teamGallery .teamImgGallery {
+    margin-bottom: 75px;
+  }
+  .teamGallery .teamImgGallery a {
+    width: calc(50% - 30px);
+  }
+  .teamGallery .teamImgGallery .secondTextContainer {
+    width: calc(100% - 30px);
+  }
+  .teamGallery .teamImgGallery .secondTextContainer a {
+    font-size: 1.25rem;
+    padding: 50px;
+  }
+
+  footer .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer .wrapper h2 {
+    padding-top: 75px;
+  }
+  footer .wrapper .twitterForm h2 {
+    text-align: center;
+  }
+  footer .wrapper .twitterForm form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 850px) {
+  .mainHeader {
+    height: 50vh;
+  }
+
+  .aboutUs .aboutUsList {
+    width: 70%;
+  }
+
+  .navBar .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navBar input,
+.navBar label,
+.navBar label div {
+    display: block;
+  }
+  .navBar label div {
+    padding-left: 20px;
+  }
+  .navBar .remove {
+    display: none;
+  }
+
+  .aboutUs .aboutUsList {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .brandingSection .absoluteImg {
+    display: none;
+  }
+  .brandingSection .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .brandingSection .flexContainer .textContainer {
+    width: 80%;
+  }
+
+  .teamGallery .teamImgGallery {
+    margin-bottom: 75px;
+  }
+  .teamGallery .teamImgGallery a, .teamGallery .teamImgGallery .textContainer {
+    width: calc(100% - 30px);
+  }
+}
+@media (max-width: 450px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .lineSection {
+    background-image: none;
+  }
+
+  .flexContainer {
+    width: 100%;
+  }
 }

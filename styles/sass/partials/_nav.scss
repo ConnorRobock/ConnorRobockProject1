@@ -22,6 +22,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     ul, .searchCart {
@@ -51,5 +52,52 @@
         padding: 4px;
     }
 
+}
+
+// Slide out Nav
+.navBar {
+    input, label, label div {
+        display: none;
+    }
+
+    label div {
+        z-index: 20;
+        cursor: pointer;
+    }
+    
+    i {
+        cursor: pointer;
+    }
+}
+
+.slideOutNav {
+    background-color: $primary;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 100%;
+    height: 100vh;
+    max-width: 200px;
+    color: $footerTextColor;
+    padding: 35px 50px;
+    transition: 0.75s;
+    ul {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        li {
+            padding: 10px;
+        }
+    }
+    
+}
+
+.navBar input[type=checkbox] {
+    opacity: 0;
+    position: absolute;
+    &:checked ~ .slideOutNav {
+        //don't want to target the check box, by using ~ we can target a sibling element, in this case the slideOutNav
+        left: 0;
+    }
 }
 
