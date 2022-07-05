@@ -57,6 +57,24 @@
         }
     }
 
+    // contact page
+
+    .contactDetails {
+        .contactInfo {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            div {
+                width: 100%;
+                padding: 30px;
+            }
+        }
+    }
+
+    .bottomImg div {
+        height: 30vh;
+    }
+
 }
 
 @media (max-width: 850px) {
@@ -94,6 +112,9 @@
         width: 100%;
         flex-direction: column;
         align-items: center;
+        li {
+            width: 80%;
+        }
     }
 
     .brandingSection {
@@ -133,9 +154,14 @@
 
     .lineSection {
     background-image: none;
-    }
-        .flexContainer {
+    background-position: 0;
+        .wrapper .flexContainer {
             width: 100%;
+            padding: 75px 0 75px 0;
         }
+            .wrapper .flexContainer p {
+                padding: 50px;
+            }
+    }
     
 }

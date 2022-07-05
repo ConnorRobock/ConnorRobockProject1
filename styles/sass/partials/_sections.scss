@@ -174,7 +174,7 @@
                 padding: 75px;
                 text-align: center;
             }
-            
+
         }
             
     }
@@ -412,6 +412,12 @@
         div {
             width: calc( (100%/3) - 20px);
             padding: 75px 40px 75px 40px;
+            h4 {
+                padding-bottom: 15px;
+            }
+            i {
+                padding-bottom: 20px;
+            }
         }
     }
 

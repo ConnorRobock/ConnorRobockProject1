@@ -1023,6 +1023,12 @@ header {
   width: calc(33.3333333333% - 20px);
   padding: 75px 40px 75px 40px;
 }
+.contactDetails .contactInfo div h4 {
+  padding-bottom: 15px;
+}
+.contactDetails .contactInfo div i {
+  padding-bottom: 20px;
+}
 .contactDetails .address {
   border-left: 1px solid #f6f6f6;
   border-right: 1px solid #f6f6f6;
@@ -1168,6 +1174,27 @@ footer h2 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+
+  .contactDetails .contactInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactDetails .contactInfo div {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .bottomImg div {
+    height: 30vh;
+  }
 }
 @media (max-width: 850px) {
   .mainHeader {
@@ -1205,6 +1232,9 @@ footer h2 {
         -ms-flex-align: center;
             align-items: center;
   }
+  .aboutUs .aboutUsList li {
+    width: 80%;
+  }
 
   .brandingSection .absoluteImg {
     display: none;
@@ -1236,9 +1266,13 @@ footer h2 {
 
   .lineSection {
     background-image: none;
+    background-position: 0;
   }
-
-  .flexContainer {
+  .lineSection .wrapper .flexContainer {
     width: 100%;
+    padding: 75px 0 75px 0;
+  }
+  .lineSection .wrapper .flexContainer p {
+    padding: 50px;
   }
 }
