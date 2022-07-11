@@ -56,10 +56,6 @@
 
 // Slide out Nav
 .navBar {
-    input, label, label div {
-        display: none;
-    }
-
     label div {
         z-index: 20;
         cursor: pointer;
@@ -70,17 +66,21 @@
     }
 }
 
+.menuIcon {
+    padding: 25px;
+}
+
 .slideOutNav {
     background-color: $primary;
     position: fixed;
     top: 0;
-    left: -250px;
     width: 100%;
     height: 100vh;
     max-width: 200px;
     color: $footerTextColor;
     padding: 35px 50px;
     transition: 0.75s;
+    display: none;
     ul {
         margin-top: 50px;
         display: flex;
@@ -92,12 +92,14 @@
     
 }
 
-.navBar input[type=checkbox] {
-    opacity: 0;
-    position: absolute;
-    &:checked ~ .slideOutNav {
-        //don't want to target the check box, by using ~ we can target a sibling element, in this case the slideOutNav
-        left: 0;
-    }
-}
+// Slide out Nav with CSS
+
+// .navBar input[type=checkbox] {
+//     opacity: 0;
+//     position: absolute;
+//     &:checked ~ .slideOutNav {
+//         //don't want to target the check box, by using ~ we can target a sibling element, in this case the slideOutNav
+//         display: block;
+//     }
+// }
 

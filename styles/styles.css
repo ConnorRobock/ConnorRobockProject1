@@ -530,9 +530,6 @@ footer li {
   padding: 4px;
 }
 
-.navBar input, .navBar label, .navBar label div {
-  display: none;
-}
 .navBar label div {
   z-index: 20;
   cursor: pointer;
@@ -541,11 +538,14 @@ footer li {
   cursor: pointer;
 }
 
+.menuIcon {
+  padding: 25px;
+}
+
 .slideOutNav {
   background-color: #333333;
   position: fixed;
   top: 0;
-  left: -250px;
   width: 100%;
   height: 100vh;
   max-width: 200px;
@@ -553,6 +553,7 @@ footer li {
   padding: 35px 50px;
   -webkit-transition: 0.75s;
   transition: 0.75s;
+  display: none;
 }
 .slideOutNav ul {
   margin-top: 50px;
@@ -566,14 +567,6 @@ footer li {
 }
 .slideOutNav ul li {
   padding: 10px;
-}
-
-.navBar input[type=checkbox] {
-  opacity: 0;
-  position: absolute;
-}
-.navBar input[type=checkbox]:checked ~ .slideOutNav {
-  left: 0;
 }
 
 header {
@@ -1124,15 +1117,12 @@ footer h2 {
   .mainHeader {
     height: 70vh;
   }
-
   .aboutUs .aboutUsList {
     width: 70%;
   }
-
   .footerLogo {
     margin-top: 100px;
   }
-
   .teamGallery h3 {
     margin: 100px;
   }
@@ -1149,7 +1139,6 @@ footer h2 {
     font-size: 1.25rem;
     padding: 50px;
   }
-
   footer .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1174,7 +1163,6 @@ footer h2 {
         -ms-flex-pack: center;
             justify-content: center;
   }
-
   .contactDetails .contactInfo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1191,7 +1179,6 @@ footer h2 {
     width: 100%;
     padding: 30px;
   }
-
   .bottomImg div {
     height: 30vh;
   }
@@ -1200,11 +1187,9 @@ footer h2 {
   .mainHeader {
     height: 50vh;
   }
-
   .aboutUs .aboutUsList {
     width: 70%;
   }
-
   .navBar .wrapper {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1221,7 +1206,6 @@ footer h2 {
   .navBar .remove {
     display: none;
   }
-
   .aboutUs .aboutUsList {
     width: 100%;
     -webkit-box-orient: vertical;
@@ -1235,7 +1219,6 @@ footer h2 {
   .aboutUs .aboutUsList li {
     width: 80%;
   }
-
   .brandingSection .absoluteImg {
     display: none;
   }
@@ -1251,7 +1234,6 @@ footer h2 {
   .brandingSection .flexContainer .textContainer {
     width: 80%;
   }
-
   .teamGallery .teamImgGallery {
     margin-bottom: 75px;
   }
@@ -1263,7 +1245,6 @@ footer h2 {
   .wrapper {
     width: 100%;
   }
-
   .lineSection {
     background-image: none;
     background-position: 0;
